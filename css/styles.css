@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+    .k2d-extrabold {
+    font-family: "K2D", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    }
+    .inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings:
+            "slnt" 0;
+    }
+    .palette-mosaic-regular {
+        font-family: "Palette Mosaic", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+body {
+    align-items: center;
+    margin-left: 500px;
+    width: 320px;
+    height: 568;
+    font-family: "Inter", sans-serif;
+    background-color: #a5a5a5; /* Fundo cinza */
+    display: flex;
+    flex-direction: column;
+  
+}
+.pseudoheader {
+    background-color: #fafafa; /* Fundo branco para cabeçalho e rodapé */
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: center;
+    width: 320px;
+    align-items: left;
+    top: 0;
+   }
+
+.pseudofooter button {
+    position: center;
+    width: 300px;
+    height: 44px;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 0 0 ; /* Bordas arredondadas */
+    text-align: center;
+    color: #219EBC; 
+    font-weight: bold;
+    background-color: #ffffff; /* Fundo branco para o rodapé */
+    align-items: center;
+    justify-content: center;
+    padding:10px 20px;
+    border:none;
+    user-select: none;
+}
+
+.search-profile1 {
+    display: flex;
+    align-items: center;
+    
+}
+.search-profile1 i {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-right: 10px
+
+}
+.search-profile {
+    display: flex;
+    align-items: center;
+}
+.search-profile i {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.main-content {
+    flex:10;
+    display: flex;
+    min-width: 320px;
+    min-height: 568px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2; /* Fundo cinza */
+}
+.balance-window {
+    background-color: #ffffff; /* Fundo branco para a janela */
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 254px;
+    height: 144px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.balance-title {
+    color: #219EBC;
+    font-size: 11px;
+    font-weight: bold;
+}
+.balance-amount {
+    font-size: 24px;
+    margin-top: 5px;
+    color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.balance-window:hover .balance-amount {
+    opacity: 1;
+    visibility: visible;
+}
+.balance-window .balance-amount:before {
+    content: "R$ ";
+}
+.view-statement {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #2195f300;
+    color: #8ECAE6;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 7px;
+    transition: background-color 0.3s ease;
+}
+.view-statement:hover {
+    background-color: #219EBC; /* Cor laranja ao passar o mouse */
+}
+.window-buttons {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.window-buttons button {
+    background-color: #8ECAE6; /* Botões laranjas dentro da janela */
+    color: black;
+    padding: 0px;
+    max-width: 56px;
+    height: 25px;
+    border: none;
+    border-radius: 40px;
+    font-size: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.window-buttons button:hover {
+    background-color: #023047; /* Cor azul escuro ao passar o mouse */
+}
+.window-buttons2 button:hover {
+    background-color: #ffffff; /* Cor azul claro ao passar o mouse */
+}
+.columns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+.column button {
+    background-color: #ffffff;
+    width: 131px;
+    height: 72px;
+    color: #000;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column button:hover {
+    background-color: #219EBC; /* Cor laranja ao passar o mouse */
+    color: #ffffff;
+}
+.column button i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+.nebulakids button {
+    background-color: #8ECAE6;
+    width: 236px;
+    height: 43px;
+    color: #fff;
+    padding: 10px;
+    border: 2px  #ffffff00;
+    border-radius: 36px;
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.nebulakids button:hover {
+    background-color: #219EBC;
+}
+.kb {
+    color:#00B2FF;
+    font-family: "Palette Mosaic", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.ig {
+    color:#05FF00;
+    font-family: "Palette Mosaic", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.do {
+    color:#FF7A00;
+    font-family: "Palette Mosaic", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.sy {
+    color:#FFD600;
+    font-family: "Palette Mosaic", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.ola {
+    align-items: left;
+}
